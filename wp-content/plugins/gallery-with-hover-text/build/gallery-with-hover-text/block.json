@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/gallery-with-hover-text",
+  "version": "0.1.0",
+  "title": "Gallery With Hover Text",
+  "category": "media",
+  "icon": "format-gallery",
+  "description": "Display a gallery with hover text options.",
+  "example": {},
+  "attributes": {
+    "boxOneHeading": {
+      "type": "string",
+      "source": "html",
+      "selector": ".box-one .heading"
+    },
+    "boxOneHoverText": {
+      "type": "rich-text",
+      "source": "html",
+      "selector": ".box-one .hover"
+    },
+    "boxOnePhoto": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "src"
+    },
+    "boxTwoHeading": {
+      "type": "string",
+      "source": "html",
+      "selector": ".box-two .heading"
+    },
+    "boxTwoHoverText": {
+      "type": "rich-text",
+      "source": "html",
+      "selector": ".box-two .hover"
+    },
+    "boxTwoPhoto": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "src"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide"
+    ]
+  },
+  "textdomain": "gallery-with-hover-text",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

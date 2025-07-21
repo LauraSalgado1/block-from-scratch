@@ -1,0 +1,30 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.gwh-ul li {
+	.hover {
+		margin-bottom: auto;
+		opacity: 1;
+		overflow: auto;
+		position: relative;
+	}
+	&:after {
+		background: rgba(0, 0, 0, 0.7);
+	}
+	&:hover {
+		border: 2px solid black;
+	}
+	.photo__button {
+		position: relative;
+		z-index: 10;
+		color: white;
+		background: grey;
+	}
+	[data-rich-text-placeholder] {
+		color: white;
+		opacity: 1;
+	}
+}
